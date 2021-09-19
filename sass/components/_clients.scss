@@ -22,6 +22,13 @@
   fill: #afb1b8;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 .clients__icon:not(:last-child) {
   margin-right: 30px;
@@ -29,6 +36,15 @@
 .clients__icon {
   width: 170px;
   height: 92px;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    flex-basis: 33.333%;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-wrap: wrap;
+    flex-basis: 25%;
+  }
 }
 .clients__link:hover,
 .clients__link:focus {

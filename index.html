@@ -16,11 +16,12 @@
 <body class="body">
   <header>
     <!-- Навигация -->
+    
     <nav class="navigation">
-      <div class="nav">
+      <div class="nav container">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
         <!-- переход на страницы -->
-        <ul class="page list">
+               <ul class="page list">
           <li class="page__item"><a href="./index.html" class="page__link link page__link--current">Студия</a>
           </li>
           <li class="page__item"><a href="./portfolio.html" class="page__link link">Портфолио</a></li>
@@ -46,17 +47,21 @@
         </ul>
       </div>
     </nav>
+    </div>
   </header>
   <!-- Заказ услуг -->
   <main>
     <section class="main-title">
+      <div class="container">
       <h1 class="title">Эффективные решения для вашего бизнеса</h1>
       <button class="order" data-modal-open>Заказать услугу</button>
+      </div>
     </section>
     <!-- Особености -->
     <section class="features">
+      <div class="container">
       <ul class="features-list">
-        <li>
+        <li >
           <div class="features-list__icon">
             <svg>
               <use href="./images/svg/symbol-defs.svg#icon-antenna"></use>
@@ -66,7 +71,7 @@
           <p class="features-list__description">Идейные соображения, а также начало повседневной работы по формированию
             позиции.</p>
         </li>
-        <li>
+        <li >
           <div class="features-list__icon">
             <svg>
               <use href="./images/svg/symbol-defs.svg#icon-clock"></use>
@@ -77,7 +82,7 @@
             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
           </p>
         </li>
-        <li>
+        <li >
           <div class="features-list__icon">
             <svg>
               <use href="./images/svg/symbol-defs.svg#icon-diagram"></use>
@@ -99,11 +104,13 @@
             заданий.</p>
         </li>
       </ul>
+      </div>
     </section>
 
     <!-- Чем мы занимаемся -->
 
     <section class="activities">
+      <div class="container">
       <h2 class="activities__heading">Чем мы занимаемся</h2>
       <ul class="activities__about">
         <li class="activities__list">
@@ -119,10 +126,13 @@
           <h3 class="activities__discription">Дизайнерские решения</h3>
         </li>
       </ul>
+      </div>
     </section>
+
     <!-- Наша команда -->
     <section class="team">
-      <h2 class="team__heading">Наша команда</h2>
+      <div class="container">
+        <h2 class="team__heading">Наша команда</h2>
       <ul class="team-members">
         <li class="team-members__list">
           <img src="./images/team/img.jpg" alt="Игорь Демьяненко" width="270" />
@@ -261,10 +271,12 @@
           </ul>
         </li>
       </ul>
-    </section>
+    </div>
+          </section>
     <!-- Постоянные клиенты -->
     <section>
-      <div class="clients-block">
+      <div class="container">
+        <div class="clients-block">
         <h2 class="clients-heading">Постоянные клиенты</h2>
         <div class="clients">
           <ul class="list clients__cards">
@@ -307,11 +319,13 @@
           </ul>
         </div>
       </div>
+    </div>
     </section>
   </main>
   <!-- Футер -->
   <footer class="footer">
-    <div>
+    <div class="container">
+      <div>
       <a href="./index.html" class="logo"><span>Web</span>Studio</a>
       <address class="direction">
         <ul class="direction__cont">
@@ -370,8 +384,11 @@
         </button>
       </form>
     </div>
+    </div>
   </footer>
+
   <!-- Модальное окно -->
+  <div class="container">
   <div class="backdrop is-hidden" data-modal="">
     <div class="modal">
       <button data-modal-close class="modal-close">
@@ -419,6 +436,7 @@
         <button class="modal__send" type="submit">Отправить</button>
       </form>
     </div>
+  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>

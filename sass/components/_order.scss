@@ -1,4 +1,10 @@
 /* Заказ услуг */
+@media screen and (max-width: 480px) {
+  .main-title {
+    width: 480px;
+  }
+}
+
 .main-title {
   height: 600px;
   margin-left: auto;

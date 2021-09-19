@@ -1,18 +1,19 @@
 //Особености
 .features {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 94px 15px 94px 15px;
 
-  & li:not(:last-child) {
-    margin-right: 30px;
+  &__li:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
+
 .features-list {
   padding: 0px;
-  display: flex;
+  // display: flex;
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
 
   &__title {
     margin: 0px;
@@ -23,6 +24,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
   }
   &__description {
     margin: 0px;
@@ -33,17 +35,54 @@
 
   &__icon {
     display: flex;
-    width: 270px;
     height: 120px;
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: #f5f4fa;
     align-items: center;
     justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  & svg {
+  svg {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 50%;
+    }
+  }
+  // .features-list li:nth-child(2n + 1) {
+  //   margin-right: 30px;
+  // }
+  // .features-list li {
+  //   margin-right: 30px;
+  // }
+}
+@media screen and (min-width: 769px) {
+  .features {
+    padding: 94px 15px 94px 15px;
+  }
+
+  .features-list {
+    display: flex;
+    width: 1200px;
+    &__icon {
+      width: 270px;
+    }
+  }
+
+  .features li:not(:last-child) {
+    margin-right: 30px;
   }
 }

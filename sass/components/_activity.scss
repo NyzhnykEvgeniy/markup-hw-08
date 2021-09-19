@@ -1,7 +1,7 @@
 /* Чем мы занимаемся */
 
 .activities {
-  width: 1200px;
+  //width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -15,12 +15,21 @@
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &__about {
-    display: flex;
     margin-bottom: 94px;
     padding-left: 0px;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
+
   &__list:not(:last-child) {
     margin-right: 30px;
   }
