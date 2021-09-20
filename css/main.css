@@ -41,8 +41,6 @@
 .nav {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -184,14 +182,7 @@
 }
 
 /* Заказ услуг */
-@media screen and (max-width: 480px) {
-  .main-title {
-    width: 480px;
-  }
-}
-
 .main-title {
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -207,7 +198,6 @@
 }
 
 .title {
-  max-width: 696px;
   margin: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -560,6 +550,7 @@
   .clients__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -567,24 +558,15 @@
   .clients__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
-}
-
-.clients__icon:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients__icon {
-  width: 170px;
-  height: 92px;
 }
 
 @media screen and (max-width: 480px) {
   .clients__icon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 33.333%;
-        flex-basis: 33.333%;
+    margin: 15px;
   }
 }
 
@@ -592,8 +574,9 @@
   .clients__icon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
@@ -604,6 +587,7 @@
 }
 
 .clients__link {
+  padding: 16px 32px;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -629,7 +613,6 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
-  height: 252px;
   background: #2f303a;
   color: var(--background-color-site);
   display: -webkit-box;
@@ -675,8 +658,6 @@
 }
 
 .join {
-  width: 206px;
-  height: 80px;
   margin-top: 12px;
   margin-left: 70px;
   margin-right: 93px;
@@ -759,10 +740,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .subscribe__form input {
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

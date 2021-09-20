@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
-  height: 252px;
+  // height: 252px;
   background: #2f303a;
   color: var(--background-color-site);
   display: flex;
@@ -47,8 +47,8 @@
 }
 
 .join {
-  width: 206px;
-  height: 80px;
+  // width: 206px;
+  // height: 80px;
   margin-top: 12px;
   margin-left: 70px;
   margin-right: 93px;
@@ -116,9 +116,10 @@
 
 .subscribe__form {
   display: flex;
+  flex-wrap: wrap;
 
   & input {
-    width: 358px;
+    // width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -141,6 +142,7 @@
 
 .subscribe__bt-submit {
   display: flex;
+
   align-items: center;
   justify-content: center;
   text-align: center;
